@@ -1,2 +1,6 @@
-class MissionControlController < ApplicationController
+class MissionControlController < ActionController::Base
+  http_basic_authenticate_with(
+    name: Rails.application.credentials.dig(:mission_control, :username),
+    password: Rails.application.credentials.dig(:mission_control, :password)
+  )
 end
