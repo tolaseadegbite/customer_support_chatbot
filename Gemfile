@@ -71,4 +71,4 @@ gem "ruby_llm", "~> 1.16"
 
 gem "sqlite3", "~> 2.9"
 
-gem "mission_control-jobs", "~> 1.1"
+gem "mission_control-jobs", "~> 1.2"
